@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+    font-family: 'Bree Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* first section */
+
+.firstSection {
+    height: 600px;
+    width: 100%;
+    background-image: url("https://cdn.discordapp.com/attachments/792105200194027561/835870626492710982/PicsArt_04-25-02.30.52.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contain-info {
+    margin: 0 auto ;
+    padding: 30px 40px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff1a;
+    border-radius: 1%;
+    position: relative;              
+    top: 50%;                        
+    transform: translate(0, -50%);
+}
+
+h1 {
+    color: #e0fbfc;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.right p {
+    color: #e0fbfc;
+    font-size: 20px;
+}
+
+#pic {
+    width: 200px;
+    height: auto;
+    border-radius: 60%;
+}
+
+.right {
+    margin: 20px;
+}
+
+.left {
+    margin: 20px;
+}
+
+#navi {
+    text-decoration: none;
+    color: #e0fbfc;
+    background-color: #02091b;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color, background-color 0.5s;
+}
+
+#navi:hover {
+    color: #02091b;
+    background-color: #e0fbfc;
+    transition-duration: 0.5s;
+}
+
+/* second section */
+
+.secondSection {
+    background-color: #020919;
+    height: fit-content;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accounts, .others {
+    margin: 0 auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#account {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 20px 10px;
+    padding: 10px 10px ;
+    background-color: #040c1d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+#account:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition-duration: 0.5s;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    margin: 2px 0;
+    color: #aaceef
+}
+
+p#description {
+    margin: 2px 0;
+    font-size: 15px;
+    color: #e0fbfc;
+}
+
+.separator{
+    color: #e0fbfc;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+    .contain-info{
+        flex-direction: column;
+    }
+    
+    .firstSection{
+        height: 800px;
+    }
+}
+
+@media (max-width: 800px){
+    .firstSection{
+        height: 900px;
+    }
+}
+
+@media (max-width: 700px){
+    .contain-info{
+        padding: 10px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px){
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 40px;
+    }
+    .contain-info{
+        width: 85%;
+    }
+}
